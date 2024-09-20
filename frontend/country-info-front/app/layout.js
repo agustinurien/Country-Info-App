@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { manrope } from "./fonts/fonts";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,6 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <nav className={`${manrope.className} navBar`}>
+          <a href="/" className="home">Home</a>
+        </nav>
         {children}
       </body>
     </html>

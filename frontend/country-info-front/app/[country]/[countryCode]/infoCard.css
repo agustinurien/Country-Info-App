@@ -1,0 +1,97 @@
+.containerInfoCard{
+    margin-top: 70px;
+    height: 520px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.801);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.185);
+    border-radius: 10px;
+    padding: 20px;
+}
+.country{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.178);
+}
+.country h1{
+    font-size: 5rem;
+}
+
+.containerFlag{
+    background-color: rgba(0, 0, 0, 0.178);
+    height: 100px;
+    width: 150px;
+}
+.country .flag{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.containerStats{
+    height: 340px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+
+}
+.containerStats .borders{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: scroll;
+}
+.containerStats .borders h2{
+    color: black;
+    text-align: start;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+.border{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+.border h3{
+    font-size: 1rem;
+    padding-left: 5px;
+}
+.border a{
+    color: white;
+    background-color: rgb(0, 81, 255);
+    width: 100px;
+    height: 22px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.chartSection{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.chartSection h2{
+    color: black;
+    text-align: start;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+.containerChart{
+    height: 100%;
+}
+.containerChart canvas{
+    height: 100%;
+}
